@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="gestaoProdutos">
+	<class name="Produto" table="produtos">
+		<id name="id" type="int" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="descricao" type="String" column="descricao" />
+		<property name="iva" type="int" column="iva" />
+		<property name="precoUnitario" type="int" column="precoUnitario" />
+		<property name="gestor" type="int" column="gestor" />
+		<property name="categoriaId" type="int" column="categorias_id" />
+		<property name="subcategoriaId" type="int" column="subcategorias_id" />
+	</class>
+</hibernate-mapping>

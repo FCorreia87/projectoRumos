@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="gestaoProdutos">
+	<class name="LinhaFactura" table="facturas_linhas">
+		<id name="id" type="int" column="id" />
+		<property name="facturaId" type="int" column="facturas_id" />
+		<property name="quantidade" type="int" column="quantidade" />
+		<property name="produtoId" type="int" column="produtos_id" />
+		<property name="iva" type="int" column="iva" />
+		<property name="nif" type="String" column="nif" />
+		<property name="precoUnitario" type="int" column="precoUnitario" />
+	</class>
+</hibernate-mapping>
